@@ -1,35 +1,146 @@
 <!doctype html>
-<html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8" />
+        <title>Fragratia.com</title>
+        <link rel="stylesheet" href="styles_home.css" />
+        <script src="recommendation.js" defer></script>
+        <script
+            src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"
+            defer
+        ></script>
+    </head>
     <body>
-        <head>
-            <div class="container">
-            <meta charset="utf-8">
-            <title>Fragratia.com</title>
-                <link rel="stylesheet" href="styles_home.css">
-                <div class="row">
-                    <div class="col-md-12">
-                        <header>
-                            <a href="Fragratia.com.html">
-                            <img class="menulogo" src="media/logo_onlytext.svg" alt="Fragratia Logo"/>
-                            </a>
-                            <nav>
-                                <ul>
-                                    <li><a href="https://www.fragratia.com">Home</a></li>
-                                    <li><a href="https://www.fragratia.com/dufttest">Duft-Test</a></li>
-                                    <li><a href="https://www.fragratia.com/shop">Shop</a></li>
-                                    <li><a href="https://www.fragratia.com/about">About</a></li>
-                                </ul>
-                            </nav>
-                        </header>
-                            <main>
-                                <div>
-                                    <img src="media/bg_1.webp" alt="Background Section 1" class="bg_img">
-                                <h1 class="intro">Welcome to Fragratia</h1>
-                                <p class="intro_ut">The one that suits you.</p>
+        <div class="container">
+            <div class="row">
+                < class="col-md-12">
+                    <header>
+                        <a href="Fragratia.com.html">
+                            <img
+                                class="menulogo"
+                                src="media/logo_onlytext.svg"
+                                alt="Fragratia Logo"
+                            />
+                        </a>
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="https://www.fragratia.com">Home</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.fragratia.com/dufttest"
+                                        >Duft-Test</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://www.fragratia.com/shop"
+                                        >Shop</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://www.fragratia.com/about"
+                                        >About</a
+                                    >
+                                </li>
+                            </ul>
+                        </nav>
+                    </header>
+
+                    <main>
+                        <section class="section1">
+                            <img
+                                src="media/bg_1.webp"
+                                alt="Background Section 1"
+                                class="bg_img"
+                            />
+                            <h1 class="intro">Welcome to Fragratia</h1>
+                            <p class="intro_ut">The one that suits you.</p>
+                        </section>
+
+                        <section class="section2">
+                            <h1 class="recommend">
+                                Unsere Empfehlungen für den
+                            </h1>
+                            <h1 class="sommer">Sommer</h1>
+                                <div class="grid">
+                                    <div class="grid-item">
+                                        <img
+                                            src="media/spaceholder1.png"
+                                            alt="Produkt 1"
+                                        />
+                                        <div class="content">
+                                            <h3>Produkt 1</h3>
+                                            <p>
+                                                Frische Zitrusnoten für den
+                                                Sommer.
+                                            </p>
+                                            <p class="more-text">
+                                                Ein frischer Duft mit einer
+                                                lebendigen Kombination aus
+                                                Zitrusfrüchten und blumigen
+                                                Akzenten, der perfekt für warme
+                                                Tage geeignet ist.
+                                            </p>
+                                            <button>Mehr erfahren</button>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img
+                                            src="media/spaceholder2.png"
+                                            alt="Produkt 2"
+                                        />
+                                        <div class="content">
+                                            <h3>Produkt 2</h3>
+                                            <p>Sanfte Blumennote mit Wärme.</p>
+                                            <p class="more-text">
+                                                Diese Komposition aus Jasmin und
+                                                Vanille schafft eine warme und
+                                                einladende Atmosphäre, ideal für
+                                                entspannte Sommerabende.
+                                            </p>
+                                            <button>Mehr erfahren</button>
+                                        </div>
+                                    </div>
+                                    <div class="grid-item">
+                                        <img
+                                            src="media/spaceholder3.png"
+                                            alt="Produkt 3"
+                                        />
+                                        <div class="content">
+                                            <h3>Produkt 3</h3>
+                                            <p>
+                                                Holzig mit einem Hauch Vanille.
+                                            </p>
+                                            <p class="more-text">
+                                                Ein intensiver, holziger Duft
+                                                mit süßen Vanillenoten, der das
+                                                ganze Jahr über für ein Gefühl
+                                                von Geborgenheit sorgt.
+                                            </p>
+                                            <button>Mehr erfahren</button>
+                                        </div>
+                                    </div>
+                                    <!-- Weitere Items hier -->
                                 </div>
-                            </main>
-                    </div>
+
+
+
+
+                        </section>
+                    </main>
                 </div>
             </div>
+        </div>
+        <script>
+            window.addEventListener("load", function () {
+                var grid = document.querySelector(".grid");
+                new Masonry(grid, {
+                    itemSelector: ".grid-item",
+                    columnWidth: 260,
+                    gutter: 20,
+                    fitWidth: true,
+                });
+            });
+        </script>
     </body>
 </html>
