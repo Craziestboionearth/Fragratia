@@ -1,3 +1,11 @@
+/* Basis Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
 /* Header & Navigation */
 header {
     position: fixed;
