@@ -273,3 +273,24 @@ li a {
         width: 100%;
     }
 }
+
+.Dufttest_home {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+}
+
+.Dufttest_home button {
+    margin-top: 20px;
+    background-color: rgb(68, 131, 138);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        opacity 0.3s ease;
+}
