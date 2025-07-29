@@ -283,8 +283,9 @@ li a {
     display: block;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #000000;
+    height: 800px;
+    overflow: hidden;
+    background-color: rgb(1, 1, 1);
 }
 
 .Dufttest_home button {
