@@ -300,3 +300,20 @@ li a {
         background-color 0.3s ease,
         opacity 0.3s ease;
 }
+
+/*Footer*/
+footer {
+    background-color: rgb(141, 138, 134);
+    padding: 20px;
+    text-align: center;
+}
+
+/*Credit in Footer*/
+.github_credit {
+    color: rgb(1, 1, 1);
+    font-size: 14px;
+}
+
+.credit_margin {
+    height: 20px;
+}
