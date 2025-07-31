@@ -1,96 +1,71 @@
-/*main*/
-
-body {
-    background: linear-gradient(
-        to right,
-        rgb(168, 231, 238) 0%,
-        rgb(168, 231, 238) 3%,
-        /* helles Türkis bis 25% */ rgb(0, 0, 0) 10%,
-        /* Schwarz beginnt weich ab 25% */ rgb(0, 0, 0) 70%,
-        /* Schwarz bis 60% */ rgb(168, 231, 238) 80%,
-        /* Türkis kommt weich zurück ab 60% */ rgb(168, 231, 238) 100%
-    );
+/* Basis Reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+/* Hauptbereich */
+html,
+body {
+    height: 100%;
     font-family: Arial, sans-serif;
+    background-color: rgb(1, 1, 1);
+}
+
+/* Section1 Styling (deine bestehende) */
+.section1 {
+    background: rgb(1, 1, 1);
+    height: 1065px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    position: relative;
+    color: white;
     z-index: 2;
 }
 
-/*section welcome*/
 .bg_img {
+    position: absolute;
     top: 30%;
     left: 20%;
-    object-position: center;
-    position: absolute;
-    align-items: center;
-    text-align: center;
     width: 50%;
-    height: 50%;
+    height: 60%;
     object-fit: cover;
-    opacity: 0.5; /* macht nur das Bild durchsichtig */
+    opacity: 0.25;
     z-index: 1;
 }
 
 .intro {
-    position: relative;
-    color: rgb(256, 256, 256, 1);
     font-size: 5rem;
     text-align: center;
     z-index: 2;
+    color: rgb(251, 253, 253);
 }
 
 .intro_ut {
-    position: relative;
-    color: rgba(256, 256, 256, 1);
+    font-family: "Snell Roundhand", cursive;
     font-size: 3rem;
     text-align: center;
-    font-family: "Snell Roundhand", cursive;
-    align-items: center;
     z-index: 2;
+    color: rgb(251, 253, 253);
 }
 
-/*menubar*/
+/* Header & Navigation */
 header {
-    background-color: rgb(168, 231, 238);
-    position: fixed; /* fixiert den Header relativ zum Viewport */
-    top: 0; /* ganz oben */
-    left: 0; /* ganz links */
-    width: 100%; /* volle Breite */
-    height: 100px; /* Höhe des Headers */
-    display: flex; /* flexbox für Layout */
-    align-items: center; /* vertikal zentrieren */
-    padding: 0 20px; /* horizontaler Innenabstand */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* leichter Schatten */
-    z-index: 1000; /* ganz oben anzeigen */
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    gap: 100px;
-    font-size: 1.5rem;
-}
-
-li a {
-    color: rgba(0, 0, 0, 1);
-    text-decoration: none;
-    font-weight: bold;
-    font-family: Style Script;
-}
-
-nav {
-    width: 100%;
-    background-color: rgb(168, 231, 238);
-    padding: 20px 0;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(58, 111, 118);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
 }
 
 .menulogo {
@@ -99,6 +74,229 @@ nav {
     left: 20px;
     width: 200px;
     height: 200px;
-    transform: translateY(-50%); /* vertikal zentriert */
+    transform: translateY(-50%);
     z-index: 1001;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    font-size: 1.5rem;
+}
+
+li a {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+/* Section2 Empfehlungen */
+.section2 {
+    background: linear-gradient(
+        to bottom,
+        rgb(1, 1, 1) 0%,
+        rgb(1, 1, 1) 50%,
+        rgb(141, 138, 134) 100%
+    );
+    padding: 80px 20px 40px; /* Platz für fixierten Header */
+    text-align: center;
+    width: 100vw;
+    box-sizing: border-box;
+    height: 700px;
+}
+
+.image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.recommend {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0px;
+    color: rgb(258, 251, 241);
+}
+
+.sommer {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    background: linear-gradient(
+        to bottom,
+        #332d4e,
+        #554478,
+        #7c5585,
+        #b276a3,
+        #ecc5d6,
+        #a8e7ee,
+        #a8e7ee
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Grid Container */
+.grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Einzelne Kachel */
+.grid-item {
+    background: rgb(37, 52, 92);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    width: 260px;
+    transition:
+        transform 0.5s ease,
+        box-shadow 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    transform-origin: center bottom;
+}
+
+/* Bild oben */
+.grid-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px 12px 0 0;
+    display: block;
+}
+
+/* Text-Inhalt */
+.content {
+    padding: 15px;
+    transition:
+        max-height 0.5s ease,
+        opacity 0.5s ease;
+    max-height: 80px;
+    opacity: 1;
+    overflow: hidden;
+    text-align: left;
+}
+
+.content h3 {
+    margin-bottom: 8px;
+    font-size: 1.3rem;
+    color: rgb(238, 231, 221);
+}
+
+.content p {
+    margin: 0;
+    font-size: 1rem;
+    color: rgb(251, 253, 253);
+}
+
+/* Ausführlicher Text erst sichtbar beim Hover */
+.more-text {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-top: 10px;
+    color: #555;
+    transition:
+        max-height 0.5s ease,
+        opacity 0.5s ease;
+}
+
+/* Button versteckt zunächst */
+.content button {
+    margin-top: 12px;
+    padding: 10px 18px;
+    background-color: rgb(168, 231, 238);
+    color: rgb(1, 1, 1);
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        opacity 0.3s ease;
+    display: block;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Hover-Effekte */
+
+/* Kachel leicht vergrößern */
+.grid-item:hover {
+    transform: scale(1.2);
+    z-index: 10;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Mehr Text sichtbar */
+.grid-item:hover .content {
+    max-height: 300px;
+    opacity: 1;
+}
+
+/* Ausführlicher Text einblenden */
+.grid-item:hover .more-text {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+/* Button einblenden */
+.grid-item:hover button {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .grid-item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-item {
+        width: 100%;
+    }
+}
+
+.Dufttest_home {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    background-color: #000000;
+    overflow: hidden;
+}
+
+.Dufttest_home button {
+    margin-top: 20px;
+    background-color: rgb(68, 131, 138);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition:
+        background-color 0.3s ease,
+        opacity 0.3s ease;
 }
