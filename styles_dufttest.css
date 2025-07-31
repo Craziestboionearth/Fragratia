@@ -11,7 +11,7 @@ html,
 body {
     height: 100%;
     font-family: Arial, sans-serif;
-    background-color: rgb(168, 231, 238);
+    background-color: rgb(1, 1, 1);
 }
 
 /* Header & Navigation */
@@ -21,7 +21,7 @@ header {
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: rgb(168, 231, 238);
+    background-color: rgb(58, 111, 118);
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -52,8 +52,25 @@ ul {
 }
 
 li a {
-    font-family: "Style Script", cursive;
-    font-weight: bold;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 600;
     color: black;
     text-decoration: none;
+}
+
+/*Footer*/
+footer {
+    background-color: rgb(141, 138, 134);
+    padding: 20px;
+    text-align: center;
+}
+
+/*Credit in Footer*/
+.github_credit {
+    color: rgb(1, 1, 1);
+    font-size: 14px;
+}
+
+.credit_margin {
+    height: 20px;
 }
