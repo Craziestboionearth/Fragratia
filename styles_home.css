@@ -60,7 +60,7 @@ header {
     left: 0;
     width: 100%;
     height: 100px;
-    background-color: rgb(58, 111, 118);
+    background-color: rgb(168, 231, 238);
     display: flex;
     align-items: center;
     padding: 0 20px;
@@ -95,6 +95,25 @@ li a {
     font-weight: 600;
     color: black;
     text-decoration: none;
+}
+
+.social-icons {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: opacity 0.3s ease;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
 }
 
 /* Section2 Empfehlungen */
@@ -133,7 +152,7 @@ li a {
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 40px;
-    background: linear-gradient(
+    /*background: linear-gradient(
         to bottom,
         #332d4e,
         #554478,
@@ -142,7 +161,8 @@ li a {
         #ecc5d6,
         #a8e7ee,
         #a8e7ee
-    );
+    );*/
+    background-color: rgb(168, 231, 238);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
