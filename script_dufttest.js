@@ -1,6 +1,6 @@
 // URL deiner Google Sheets JSON-API
 const apiUrl =
-  "https://script.google.com/macros/s/AKfycbwaC1Vkt6Nt914xlq5QhGKlsmn3Q_vmeAkbMmfxQDITPMnD8H4YQAcbNYKAnjAhdYPG/exec";
+  "https://script.google.com/macros/s/AKfycbxqqcvnPgUKYJZdQfhjj_zRfYj4Wl0NG-A9dS2K-xbsyqe8SUZ3wOP06Vy-UTSGpQBe/exec";
 
 // Funktion zum Laden und Anzeigen der Produkte
 function ladeProdukte() {
