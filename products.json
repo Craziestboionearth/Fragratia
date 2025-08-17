@@ -1,1 +1,434 @@
-[]
+[
+  {
+    "name": "Creed Aventus",
+    "price": 239.0,
+    "description": "Fruchtig-würzig mit Ananas, schwarzer Johannisbeere und Birke; kraftvoll, maskulin und elegant.",
+    "tags": [
+      "herren, fruchtig, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Byredo Gypsy Water",
+    "price": 189.0,
+    "description": "Zitrus, Wacholderbeeren und Vanille verschmelzen zu einem mystischen, luftigen Duft.",
+    "tags": [
+      "unisex, sauber, frisch, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Tom Ford Neroli Portofino",
+    "price": 202.99,
+    "description": "Neroli, Bergamotte und Orangenblüte – ein mediterran-frischer Klassiker.",
+    "tags": [
+      "unisex, frisch, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Maison Margiela Replica Jazz Club",
+    "price": 69.4,
+    "description": "Warme Noten von Rum, Tabak und Vanille – wie ein gemütlicher Abend in einer Bar.",
+    "tags": [
+      "herren, unter100, elegant, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Jo Malone Wood Sage & Sea Salt",
+    "price": 91.26,
+    "description": "Frisch und mineralisch – erinnert an windige Küsten mit einem Hauch Salbei.",
+    "tags": [
+      "Unisex, unter100, frisch, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Tom Ford Oud Wood",
+    "price": 204.95,
+    "description": "Edles Oud trifft auf Sandelholz, Tonkabohne und Vetiver – orientalisch und luxuriös.",
+    "tags": [
+      "Unisex, ueber100, elegant, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Maison Francis Kurkdjian Baccarat Rouge 540",
+    "price": 229.0,
+    "description": "Safran, Amberholz und Zeder – süß, warm und auffällig.",
+    "tags": [
+      "unisex, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Byredo Black Saffron",
+    "price": 193.52,
+    "description": "Safran, Wacholder, Himbeere und Leder – exotisch, cremig und leicht würzig.",
+    "tags": [
+      "Unisex, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Byredo Bal dÁfrique",
+    "price": 216.6,
+    "description": "Blumig und warm, mit Zitrus, Neroli und Amber – inspiriert von afrikanischer Lebensfreude.",
+    "tags": [
+      "Unisex, sauber, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Maison Francis Kurkdjian Oud Satin Mood",
+    "price": 220.99,
+    "description": "Üppige Rosen und Old – tief orientalisch, süß und samtig.",
+    "tags": [
+      "Unisex, fruchtig, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Tom Ford Black Orchid",
+    "price": 104.95,
+    "description": "Schwarze Trüffel, Ylang-Ylang, dunkle Früchte – geheimnisvoll, sinnlich und schwer.",
+    "tags": [
+      "Unisex, elegant, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Chanel Bleu de Chanel",
+    "price": 129.95,
+    "description": "Frischer Zitruseffekt mit Ingwer und Sandelholz – maskulin, elegant und modern.",
+    "tags": [
+      "Herren, frisch, sauber, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Dolce & Gabbana Light Blue Pour Homme",
+    "price": 78.99,
+    "description": "Zitrone, Pfeffer und Rosmarin – sportlich und sommerlich.",
+    "tags": [
+      "Herren, sauber, frisch, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Marc Jacobs Daisy",
+    "price": 57.8,
+    "description": "Veilchen, Erdbeere und Jasmin – blumig, jung und freundlich.",
+    "tags": [
+      "Damen, fruchtig, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Juliette Has a Gun Not a Perfume",
+    "price": 57.12,
+    "description": "Besteht nur aus einem Molekül (Cetalox) – rein, minimalistisch, hautnah.",
+    "tags": [
+      "Unisex, sauber, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Yves Saint Laurent Libre Intense",
+    "price": 93.54,
+    "description": "Lavendel, Orangenblüte und Vanille – kühn, floral und warm.",
+    "tags": [
+      "Damen, fruchtig, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Oribe Desertland",
+    "price": 152.0,
+    "description": "Wacholder, Lavendel und Zedernholz – ein frischer Duft mit Wüstencharakter.",
+    "tags": [
+      "Unisex, frisch, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Commodity Milk",
+    "price": 150.0,
+    "description": "Süßer, cremiger Duft mit Marshmallow-Note – warm und beruhigend.",
+    "tags": [
+      "Unisex, fruchtig, dezent, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "By/Rosie Jane Dulce",
+    "price": 69.0,
+    "description": "Vanille, brauner Zucker und Moschus – ein köstlicher warmer Gourmanduft.",
+    "tags": [
+      "Damen, elegant, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Kayali Fleur Majesty Rose Royale",
+    "price": 117.95,
+    "description": "Blumig-moschusartig, intensiv und opulent – eine moderne Rose.",
+    "tags": [
+      "Damen, fruchtig, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Kayali Vanilla 28",
+    "price": 114.99,
+    "description": "Eine dichte Vanillenote mit Karamell und Amber – süß und verführerisch.",
+    "tags": [
+      "Unisex, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Kayali Lovefest Burning Cherry",
+    "price": 110.99,
+    "description": "Schwarze Kirsche, Praline und Hölzer – fruchtig-süß und dunkel.",
+    "tags": [
+      "Unisex, fruchtig, dezent, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Kayali Wedding Velvet Santal 35",
+    "price": 59.99,
+    "description": "Samtig-holzig mit Santal und Moschus – elegant und weich.",
+    "tags": [
+      "Unisex, elegant, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Kayali Oudgasm Café Oud 19",
+    "price": 114.99,
+    "description": "Oud mit Kaffee und Gewürzen – tief, süß und geheimnisvoll.",
+    "tags": [
+      "Unisex, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Chanel No 5",
+    "price": 128.49,
+    "description": "Aldehyde, Jasmin und Sandelholz – ein legendärer, klassischer Blumenduft.",
+    "tags": [
+      "Damen, frisch, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Diptyque Orphéon",
+    "price": 104.99,
+    "description": "Würzig-blumig mit Beeren und Moschus – erinnert an Jazz und Nachleben.",
+    "tags": [
+      "Unisex, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Mugler Angel",
+    "price": 64.29,
+    "description": "Patchouli, Schokolade, Karamell – süß, schwer und einzigartig.",
+    "tags": [
+      "Damen, elegant, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Serge Lutens Un Bois Vanilla",
+    "price": 94.05,
+    "description": "Warme Vanille trifft auf Sandelholz – weich und holzig.",
+    "tags": [
+      "Unisex, fruchtig, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Sicilian Sunrise",
+    "price": 35.0,
+    "description": "Frischer Zitrusduft mit leicht würzigen Noten – sommerlich und energetisch.",
+    "tags": [
+      "Unisex, frisch, sauber, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Ruth Mastenbroek Amorosa",
+    "price": 149.92,
+    "description": "Blumig und elegant – feminin, sinnlich und sanft.",
+    "tags": [
+      "Damen, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Tom Ford Rose Prick",
+    "price": 284.33,
+    "description": "Pfeffrige Rosen mit Patchouli – floral, aber kantig und dramatisch.",
+    "tags": [
+      "Unisex, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Hermès Terre d´Hermès",
+    "price": 65.47,
+    "description": "Orange, Vetiver und Zeder – herb, holzig und bodenständig.",
+    "tags": [
+      "Herren, dezent, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Hermès H24",
+    "price": 142.0,
+    "description": "Matallisch-grün mit Salbei und Narzisse – modern, frisch und maskulin.",
+    "tags": [
+      "Herren, frisch, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Régime des Fleurs Rock River Melody",
+    "price": 240.0,
+    "description": "Blumig, würzig und unkonventionell – ein künstlerischer Duft.",
+    "tags": [
+      "herren, fruchtig, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Glossier You",
+    "price": 186.0,
+    "description": "Moschus, Amorette, Iris – weich, cremig und hautnah.",
+    "tags": [
+      "Unisex, sauber, dezent, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Phlur Vanilla Smoke",
+    "price": 25.0,
+    "description": "Rauchige Vanille mit Harzen – warm, süß und ein wenig geheimnisvoll.",
+    "tags": [
+      "Unisex, elegant, fruchtig, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Frédéric Malle Portrait of a Lady",
+    "price": 239.0,
+    "description": "Rose, Patschuli und Weihrauch – opulent, sinnlich und komplex.",
+    "tags": [
+      "Damen, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Le Labo Another 13",
+    "price": 295.0,
+    "description": "Ambroxan, Birne und Moschus – synthetisch, sauber und einzigartig.",
+    "tags": [
+      "Unisex, fruchtig, sauber, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Vyrao Witchy Woo",
+    "price": 149.6,
+    "description": "Mystischer Duft mit Patchouli, Zimt und Rosengeranie – kraftvoll & spirituell.",
+    "tags": [
+      "Unisex, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Chanel Paris-Deauville",
+    "price": 162.0,
+    "description": "Frische Zitrus- und Basilikumnoten – leicht, elegant und nostalgisch.",
+    "tags": [
+      "Unisex, frisch, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Heretic Dirty Grass",
+    "price": 165.0,
+    "description": "Hanf, Vetiver und schwarzer Pfeffer – erdig, würzig und herb.",
+    "tags": [
+      "Unisex, fruchtig, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Louis Vuitton Cactus Garden",
+    "price": 170.25,
+    "description": "Mate-Tee, Bergamotte und Zitrus – grün, frisch und belebend.",
+    "tags": [
+      "Unisex, frisch, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Non Gender Specific Flooid",
+    "price": 125.0,
+    "description": "Grapefruit, Amber, Patchouli – modern, süßlich und tragbar.",
+    "tags": [
+      "Unisex, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Calvin Klein All",
+    "price": 20.29,
+    "description": "Frische Bergamotte, Orangenblüte und Amber – clean und jung.",
+    "tags": [
+      "Unisex, fruchtig, sauber, unter100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "House of Bo Agua de Santos",
+    "price": 319.95,
+    "description": "Mandarine, Lavendel und Pomelo – zitrisch, würzig und belebend.",
+    "tags": [
+      "Unisex, fruchtig, frisch, sauber, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Diptyque Ilio",
+    "price": 145.0,
+    "description": "Kaktusfeige, Jasmin und Iris – sonnig und sommerlich.",
+    "tags": [
+      "Unisex, fruchtig, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Penhaligon’s Solaris",
+    "price": 152.55,
+    "description": "Vanille, Amber und Meersalz – cremig, warm und leuchtend.",
+    "tags": [
+      "Unisex, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  },
+  {
+    "name": "Victoria Beckham Portofino",
+    "price": 290.0,
+    "description": "Vetiver, Amber und Bergamotte – sonnig, elegant und nostalgisch",
+    "tags": [
+      "Unisex, fruchtig, elegant, ueber100, beliebig"
+    ],
+    "picture": ""
+  }
+]
