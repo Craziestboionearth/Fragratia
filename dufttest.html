@@ -11,7 +11,7 @@
         <form id="quizForm">
             <div class="question">
                 <label>1. Für wen ist der Duft?</label>
-                <select name="gender">
+                <select name="gender" required>
                     <option value="herren">Herren</option>
                     <option value="damen">Damen</option>
                     <option value="unisex">Unisex</option>
@@ -20,7 +20,7 @@
 
             <div class="question">
                 <label>2. Welche Umgebung spricht dich am meisten an?</label>
-                <select name="environment">
+                <select name="environment" required>
                     <option value="wald">Wald (frisch, fruchtig)</option>
                     <option value="spa">Spa (elegant, leicht)</option>
                     <option value="strand">Strand (luftig, sauber)</option>
@@ -30,7 +30,7 @@
 
             <div class="question">
                 <label>3. Welche Farbe spricht dich am meisten an?</label>
-                <select name="color">
+                <select name="color" required>
                     <option value="blau">Blau</option>
                     <option value="grün">Grün</option>
                     <option value="weiß">Weiß</option>
@@ -40,7 +40,7 @@
 
             <div class="question">
                 <label>4. Wie viel möchtest du ausgeben?</label>
-                <select name="price">
+                <select name="price" required>
                     <option value="unter100">Unter 100€</option>
                     <option value="ueber100">Über 100€</option>
                     <option value="beliebig">Beliebiger Preis</option>
@@ -51,7 +51,6 @@
         </form>
 
         <div class="empty"></div>
-
         <div class="results" id="results"></div>
 
         <script src="script_dufttest.js"></script>
