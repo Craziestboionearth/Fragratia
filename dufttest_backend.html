@@ -2,33 +2,44 @@
 <html lang="de">
     <head>
         <meta charset="UTF-8" />
-        <title>Produktverwaltung</title>
+        <title>Duftverwaltung</title>
         <link rel="stylesheet" href="styles_dufttest.css" />
     </head>
     <body>
-        <h1>Produkte hinzufügen / bearbeiten</h1>
+        <h1>Produktverwaltung – Düfte</h1>
 
         <form id="productForm">
-            <input type="hidden" name="index" value="" />
-            <input type="text" name="name" placeholder="Produktname" required />
-            <input type="text" name="image" placeholder="Bild-URL" required />
-            <input
-                type="text"
-                name="description"
-                placeholder="Beschreibung"
-                required
-            />
-            <input type="text" name="price" placeholder="Preis" required />
-            <input
-                type="text"
-                name="tags"
-                placeholder="Tags (komma-getrennt)"
-                required
-            />
+            <input type="hidden" name="index" />
+
+            <div class="question">
+                <label for="name">Name:</label>
+                <input type="text" name="name" required />
+            </div>
+
+            <div class="question">
+                <label for="image">Bild-URL:</label>
+                <input type="text" name="image" required />
+            </div>
+
+            <div class="question">
+                <label for="description">Beschreibung:</label>
+                <textarea name="description" required></textarea>
+            </div>
+
+            <div class="question">
+                <label for="price">Preis:</label>
+                <input type="text" name="price" required />
+            </div>
+
+            <div class="question">
+                <label for="tags">Tags (komma-getrennt):</label>
+                <input type="text" name="tags" required />
+            </div>
+
             <button type="submit">Speichern</button>
         </form>
 
-        <div id="productList"></div>
+        <div class="results" id="productList"></div>
 
         <script src="backend.js"></script>
     </body>
