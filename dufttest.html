@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Duftempfehlungstest</title>
+        <link rel="stylesheet" href="styles_dufttest.css" />
+    </head>
+    <body>
+        <h1>Finde deinen perfekten Duft</h1>
+
+        <form id="quizForm">
+            <div class="question">
+                <label>1. Für wen ist der Duft?</label>
+                <select name="gender">
+                    <option value="herren">Herren</option>
+                    <option value="damen">Damen</option>
+                    <option value="unisex">Unisex</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>2. Welche Umgebung spricht dich am meisten an?</label>
+                <select name="environment">
+                    <option value="wald">Wald (frisch, fruchtig)</option>
+                    <option value="spa">Spa (elegant, leicht)</option>
+                    <option value="strand">Strand (luftig, sauber)</option>
+                    <option value="wohnzimmer">Wohnzimmer (dezent)</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>3. Welche Farbe spricht dich am meisten an?</label>
+                <select name="color">
+                    <option value="blau">Blau</option>
+                    <option value="grün">Grün</option>
+                    <option value="weiß">Weiß</option>
+                    <option value="grau">Grau</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label>4. Wie viel möchtest du ausgeben?</label>
+                <select name="price">
+                    <option value="unter100">Unter 100€</option>
+                    <option value="ueber100">Über 100€</option>
+                    <option value="beliebig">Beliebiger Preis</option>
+                </select>
+            </div>
+
+            <button type="submit">Empfehlung anzeigen</button>
+        </form>
+
+        <div class="empty"></div>
+
+        <div class="results" id="results"></div>
+
+        <script src="script_dufttest.js"></script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.results,
+#productList {
+    margin-top: 30px;
+}
+
+.product {
+    padding: 10px;
+    margin-bottom: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.product img {
+    max-width: 200px;
+}
+
+.empty {
+    height: 100px;
+}

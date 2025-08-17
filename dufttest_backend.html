@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Produktverwaltung</title>
+        <link rel="stylesheet" href="styles_dufttest.css" />
+    </head>
+    <body>
+        <h1>Produkte hinzufügen / bearbeiten</h1>
+
+        <form id="productForm">
+            <input type="hidden" name="index" value="" />
+            <input type="text" name="name" placeholder="Produktname" required />
+            <input type="text" name="image" placeholder="Bild-URL" required />
+            <input
+                type="text"
+                name="description"
+                placeholder="Beschreibung"
+                required
+            />
+            <input type="text" name="price" placeholder="Preis" required />
+            <input
+                type="text"
+                name="tags"
+                placeholder="Tags (komma-getrennt)"
+                required
+            />
+            <button type="submit">Speichern</button>
+        </form>
+
+        <div id="productList"></div>
+
+        <script src="backend.js"></script>
+    </body>
+</html>
