@@ -1,70 +1,34 @@
-const tagMap = {
-  gender: {
-    herren: "herren",
-    damen: "damen",
-    unisex: "unisex",
-  },
-  environment: {
-    wald: "frisch,fruchtig",
-    spa: "elegant",
-    strand: "sauber",
-    wohnzimmer: "dezent",
-  },
-  price: {
-    unter100: "unter100",
-    ueber100: "ueber100",
-    beliebig: null,
-  },
-};
+// URL deiner Google Sheets JSON-API
+const apiUrl =
+  "https://script.google.com/macros/s/AKfycbwaC1Vkt6Nt914xlq5QhGKlsmn3Q_vmeAkbMmfxQDITPMnD8H4YQAcbNYKAnjAhdYPG/exec";
 
-document.getElementById("quizForm").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const formData = new FormData(e.target);
-
-  const genderTag = tagMap.gender[formData.get("gender")];
-  const environmentTags =
-    tagMap.environment[formData.get("environment")].split(",");
-  const priceTag = tagMap.price[formData.get("price")];
-
-  const selectedTags = [genderTag, ...environmentTags];
-
-  fetch("api.php")
+// Funktion zum Laden und Anzeigen der Produkte
+function ladeProdukte() {
+  fetch(apiUrl)
     .then((res) => res.json())
-    .then((products) => {
-      const matchingProducts = products.filter((product) => {
-        const matchCount = selectedTags.filter((tag) =>
-          product.tags.includes(tag),
-        ).length;
+    .then((produkte) => {
+      const container = document.getElementById("produktliste");
+      container.innerHTML = ""; // Vorherige Inhalte löschen
 
-        const priceMatches =
-          priceTag === null || product.tags.includes(priceTag);
+      produkte.forEach((p) => {
+        const produktDiv = document.createElement("div");
+        produktDiv.className = "produkt";
 
-        return matchCount >= 2 && priceMatches;
+        produktDiv.innerHTML = `
+          <h3>${p.Name}</h3>
+          <p><strong>Preis:</strong> €${parseFloat(p.Preis).toFixed(2)}</p>
+          <p><strong>Kategorie:</strong> ${p.Kategorie}</p>
+        `;
+
+        container.appendChild(produktDiv);
       });
-
-      const resultsDiv = document.getElementById("results");
-      resultsDiv.innerHTML =
-        "<h2 style='text-align: center;'>Dein perfekter Duft:</h2>";
-
-      if (matchingProducts.length === 0) {
-        resultsDiv.innerHTML +=
-          "<p style='text-align: center;'>Wir konnten leider keinen passenden Duft finden.</p>";
-      } else {
-        matchingProducts.forEach((product) => {
-          resultsDiv.innerHTML += `
-            <div class="product">
-              <h3>${product.name}</h3>
-              <img src="${product.image}" alt="${product.name}">
-              <p>${product.description}</p>
-              <strong>Preis: ${product.price}</strong>
-            </div>
-          `;
-        });
-      }
     })
     .catch((err) => {
       console.error("Fehler beim Laden der Produkte:", err);
-      document.getElementById("results").innerHTML =
-        "<p style='text-align: center;'>Fehler beim Laden der Produkte.</p>";
+      const container = document.getElementById("produktliste");
+      container.innerHTML = "<p>Fehler beim Laden der Produkte.</p>";
     });
-});
+}
+
+// Starte das Laden, sobald die Seite fertig ist
+document.addEventListener("DOMContentLoaded", ladeProdukte);
